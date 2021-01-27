@@ -1,3 +1,7 @@
+html {
+  font-size: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +13,17 @@
   margin: 0 auto;
 }
 
+p {
+  font-size: 16px;
+}
+
 section.first {
   background-color: #36c9d7;
 }
 
 .first p,
-.second_block {
+.second_block,
+section.third .first_block {
   width: 33%;
   text-align: center;
 }
@@ -25,18 +34,29 @@ section.second {
 
 .first p,
 .first_block,
-.second_block {
+.second_block,
+.first_subblock {
   display: inline-block;
 }
 
-.first_block {
+.first_block,
+section.third .second_block {
   width: 66%;
   text-align: center;
 }
 
-/* next sections */
 section.third {
   background-color: #2dd2b9;
+}
+
+.third .second_block > p:nth-child(2) {
+  display: inline-block;
+  width: 46%;
+  vertical-align: top;
+}
+
+.first_subblock {
+  width: 50%;
 }
 
 section.fourth {
