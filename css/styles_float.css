@@ -74,12 +74,22 @@ a {
 section.first {
     background-color: #36c9d7;
     font-size: 0;
+    float: left;
 }
 
 .first p {
     width: 33%;
     text-align: center;
-    display: inline-block;
+}
+
+.first > p:nth-child(1) {
+    float: left;
+}
+.first > p:nth-child(2) {
+    float: left;
+}
+.first > p:nth-child(3) {
+    float: right;
 }
 
 /* ### SECOND SECTION STYLES ### */
