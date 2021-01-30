@@ -80,23 +80,23 @@ a {
 section.first {
     background-color: #36c9d7;
     font-size: 0;
-    float: left;
 }
 
 .first p {
     width: 33%;
     text-align: center;
+    float: left;
 }
 
-.first > p:nth-child(1) {
+/* .first > p:nth-child(1) {
     float: left;
 }
 .first > p:nth-child(2) {
     float: left;
 }
 .first > p:nth-child(3) {
-    float: right;
-}
+    float: left;
+} */
 
 /* ### SECOND SECTION STYLES ### */
 
@@ -127,26 +127,28 @@ section.third {
 }
 
 .third .first_block {
-    display: inline-block;
+    float: left;
     width: 33%;
     text-align: center;
 }
 
 .third .second_block {
-    display: inline-block;
+    float: left;
     width: 66%;
     text-align: center;
 }
 
 .third .second_block > p:nth-child(2) {
-    display: inline-block;
+    float: left;
     width: 46%;
     vertical-align: top;
+    padding-left: 10.5px;
 }
 
 .third .first_sub_block {
-    display: inline-block;
+    float: right;
     width: 50%;
+    padding-right: 10.5px;
 }
 
 /* ### FOURTH SECTION STYLES ### */
