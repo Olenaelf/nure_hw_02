@@ -69,6 +69,12 @@ a {
     text-decoration: none;
 }
 
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 /* ### FIRST SECTION STYLES ### */
 
 section.first {
@@ -99,16 +105,18 @@ section.second {
     font-size: 0;
 }
 
-.second .first_block {
-    display: inline-block;
-    width: 66%;
+.second p {
     text-align: center;
 }
 
+.second .first_block {
+    float: left;
+    width: 66%;
+}
+
 .second .second_block {
-    display: inline-block;
+    float: left;
     width: 33%;
-    text-align: center;
 }
 
 /* ### THIRD SECTION STYLES ### */
