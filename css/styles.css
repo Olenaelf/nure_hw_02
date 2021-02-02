@@ -53,6 +53,10 @@ table {
     margin: 0 auto;
 }
 
+section {
+    text-align: center;
+}
+
 p,
 a {
     font-size: 16px;
@@ -76,11 +80,16 @@ section.first {
 .second_block,
 section.third .first_block {
     width: 33%;
-    text-align: center;
 }
 
 section.second {
     background-color: #53c2ab;
+    font-size: 0;
+}
+
+section.third .second_block,
+section.fourth .first_sub_block,
+section.fourth .first_sub_sub_block {
     font-size: 0;
 }
 
@@ -97,7 +106,6 @@ section.third .first_sub_block,
 section.third .second_block,
 section.fourth .first_block {
     width: 66%;
-    text-align: center;
 }
 
 section.third {
@@ -109,8 +117,8 @@ section.third {
 .fourth .first_sub_block > p:nth-child(2),
 .first_sub_block .first_sub_sub_block > p:nth-child(2) {
     display: inline-block;
-    width: 46%;
-    vertical-align: top;
+    width: 50%;
+    /* vertical-align: top; */
 }
 
 section.third .first_sub_block,

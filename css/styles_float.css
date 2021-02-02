@@ -55,6 +55,10 @@ table {
     margin: 0 auto;
 }
 
+section {
+    text-align: center;
+}
+
 p,
 a {
     font-size: 16px;
@@ -79,34 +83,17 @@ a {
 
 section.first {
     background-color: #36c9d7;
-    font-size: 0;
 }
 
 .first p {
     width: 33%;
-    text-align: center;
     float: left;
 }
-
-/* .first > p:nth-child(1) {
-    float: left;
-}
-.first > p:nth-child(2) {
-    float: left;
-}
-.first > p:nth-child(3) {
-    float: left;
-} */
 
 /* ### SECOND SECTION STYLES ### */
 
 section.second {
     background-color: #53c2ab;
-    font-size: 0;
-}
-
-.second p {
-    text-align: center;
 }
 
 .second .first_block {
@@ -123,71 +110,60 @@ section.second {
 
 section.third {
     background-color: #2dd2b9;
-    font-size: 0;
 }
 
 .third .first_block {
     float: left;
     width: 33%;
-    text-align: center;
 }
 
 .third .second_block {
     float: left;
     width: 66%;
-    text-align: center;
 }
 
 .third .second_block > p:nth-child(2) {
     float: left;
-    width: 46%;
-    vertical-align: top;
-    padding-left: 10.5px;
+    width: 50%;
+    /* vertical-align: top; */
 }
 
 .third .first_sub_block {
     float: right;
     width: 50%;
-    padding-right: 10.5px;
 }
 
 /* ### FOURTH SECTION STYLES ### */
 
 section.fourth {
     background-color: #2cb187;
-    font-size: 0;
 }
 
 .fourth .second_block {
     float: left;
     width: 33%;
-    text-align: center;
 }
 
 .fourth .first_block {
     float: left;
     width: 66%;
-    text-align: center;
 }
 
 .fourth .first_sub_sub_block {
     float: left;
     width: 50%;
-    padding-left: 10.5px;
 }
 
 .fourth .first_sub_block > p:nth-child(2) {
     float: left;
-    width: 46%;
-    vertical-align: top;
-    padding-right: 10.5px;
+    width: 50%;
+    /* vertical-align: top; */
 }
 
 .fourth .first_sub_sub_block > p:nth-child(2) {
     float: left;
-    width: 46%;
+    width: 50%;
     vertical-align: top;
-    padding-left: 5.5px;
 }
 
 .fourth .first_sub_sub_block > p:last-child {
