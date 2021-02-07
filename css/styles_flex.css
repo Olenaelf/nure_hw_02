@@ -71,7 +71,6 @@ nav {
 a {
     font-weight: bold;
     text-decoration: none;
-    text-decoration: none;
     padding: 0 30px 0 0;
 }
 
@@ -84,91 +83,76 @@ a {
 /* ### FIRST SECTION STYLES ### */
 
 section.first {
+    display: flex;
     background-color: #36c9d7;
-}
-
-.first p {
-    width: 33%;
-    float: left;
 }
 
 /* ### SECOND SECTION STYLES ### */
 
 section.second {
+    display: flex;
     background-color: #53c2ab;
 }
 
 .second .first_block {
-    float: left;
-    width: 66%;
+    flex-basis: 66%;
 }
 
 .second .second_block {
-    float: left;
-    width: 33%;
+    flex-basis: 33%;
 }
 
 /* ### THIRD SECTION STYLES ### */
 
 section.third {
+    display: flex;
     background-color: #2dd2b9;
 }
 
 .third .first_block {
-    float: left;
-    width: 33%;
+    flex-basis: 33%;
 }
 
 .third .second_block {
-    float: left;
-    width: 66%;
+    flex-basis: 66%;
 }
 
-.third .second_block > p:nth-child(2) {
-    float: left;
-    width: 50%;
-    /* vertical-align: top; */
+.third .second_block > div {
+    display: flex;
+}
+
+.third .second_block > div > p:first-child {
+    flex-basis: 50%;
 }
 
 .third .first_sub_block {
-    float: right;
-    width: 50%;
+    flex-basis: 50%;
 }
 
 /* ### FOURTH SECTION STYLES ### */
 
 section.fourth {
+    display: flex;
     background-color: #2cb187;
 }
 
 .fourth .second_block {
-    float: left;
-    width: 33%;
+    flex-basis: 33%;
 }
 
 .fourth .first_block {
-    float: left;
-    width: 66%;
+    flex-basis: 66%;
+}
+.fourth .first_sub_block {
+    display: flex;
 }
 
 .fourth .first_sub_sub_block {
-    float: left;
-    width: 50%;
+    flex-basis: 50%;
 }
-
-.fourth .first_sub_block > p:nth-child(2) {
-    float: left;
-    width: 50%;
-    /* vertical-align: top; */
+.fourth .first_sub_sub_block > div {
+    display: flex;
 }
-
-.fourth .first_sub_sub_block > p:nth-child(2) {
-    float: left;
-    width: 50%;
-    vertical-align: top;
-}
-
-.fourth .first_sub_sub_block > p:last-child {
-    float: left;
-    width: 50%;
+.fourth .first_sub_block > :last-child {
+    flex-basis: 50%;
 }
