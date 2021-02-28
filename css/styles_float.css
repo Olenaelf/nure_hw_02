@@ -124,15 +124,14 @@ section.third {
     width: 66%;
 }
 
-.third .second_block > p:nth-child(2) {
+.third .first_sub_block {
     float: left;
-    width: 50%;
-    /* vertical-align: top; */
+    width: 33%;
 }
 
-.third .first_sub_block {
+.third .second_sub_block {
     float: right;
-    width: 50%;
+    width: 33%;
 }
 
 /* ### FOURTH SECTION STYLES ### */
@@ -141,34 +140,16 @@ section.fourth {
     background-color: #2cb187;
 }
 
-.fourth .second_block {
-    float: left;
-    width: 33%;
-}
-
 .fourth .first_block {
     float: left;
     width: 66%;
 }
 
+.fourth .first_sub_sub_sub_block {
+    float: left;
+    width: 50%;
+}
 .fourth .first_sub_sub_block {
-    float: left;
-    width: 50%;
-}
-
-.fourth .first_sub_block > p:nth-child(2) {
-    float: left;
-    width: 50%;
-    /* vertical-align: top; */
-}
-
-.fourth .first_sub_sub_block > p:nth-child(2) {
-    float: left;
-    width: 50%;
-    vertical-align: top;
-}
-
-.fourth .first_sub_sub_block > p:last-child {
     float: left;
     width: 50%;
 }
